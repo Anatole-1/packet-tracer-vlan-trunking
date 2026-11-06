@@ -1,6 +1,6 @@
 # VLAN et trunk 802.1Q – Cisco Packet Tracer
 
-TP réalisé à l'ESAIP (ING2) : création de VLAN sur deux switchs Cisco 2960, liaison trunk 802.1Q avec VLAN natif dédié, VLAN de management et sécurisation de base des équipements.
+Création de VLAN sur deux switchs Cisco 2960, liaison trunk 802.1Q avec VLAN natif dédié, VLAN de management et sécurisation de base des équipements.
 
 ![Packet Tracer](https://img.shields.io/badge/Cisco-Packet%20Tracer%208.2-1BA0D7?logo=cisco&logoColor=white)
 ![Switching](https://img.shields.io/badge/Switching-VLAN%20%2F%20802.1Q-informational)
@@ -25,7 +25,7 @@ graph LR
 | ID | Nom | Rôle |
 |---|---|---|
 | 10 | Operations | Utilisateurs (PC-A, PC-B) |
-| 20 | Parking_Lot | VLAN « parking », créé mais non affecté dans ce TP |
+| 20 | Parking_Lot | VLAN « parking », créé mais non affecté |
 | 99 | Management | Administration des switchs |
 | 1000 | Native | VLAN natif du trunk (distinct du VLAN 1) |
 
@@ -74,7 +74,3 @@ Ouvrir [`tp-vlan.pkt`](tp-vlan.pkt) avec **Cisco Packet Tracer 8.2** ou plus ré
 | [`CONFIGURATIONS.md`](CONFIGURATIONS.md) | Configuration de chaque équipement et adressage des postes, en un seul fichier |
 | [`configs/`](configs/) | Une configuration brute par équipement (`.txt`) |
 | [`images/`](images/) | Captures de la topologie |
-
-## Auteur
-
-**Anatole BERNARD** – étudiant ingénieur à l'ESAIP
