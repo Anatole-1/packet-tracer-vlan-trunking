@@ -25,7 +25,7 @@ graph LR
 | ID | Nom | Rôle |
 |---|---|---|
 | 10 | Operations | Utilisateurs (PC-A, PC-B) |
-| 20 | Parking_Lot | VLAN « parking » pour ports non utilisés |
+| 20 | Parking_Lot | VLAN « parking », créé mais non affecté dans ce TP |
 | 99 | Management | Administration des switchs |
 | 1000 | Native | VLAN natif du trunk (distinct du VLAN 1) |
 
@@ -51,7 +51,7 @@ interface Vlan99
  ip address 192.168.1.11 255.255.255.0
 ```
 
-**Sécurisation de base** : `enable secret`, mots de passe console/VTY, `service password-encryption`, bannière MOTD, `no ip domain-lookup`.
+**Sécurisation de base** : `enable secret`, mots de passe console/VTY, `service password-encryption`, bannière MOTD, `no ip domain-lookup`, ports inutilisés désactivés (`shutdown`).
 
 Toutes les configurations sont regroupées dans [`CONFIGURATIONS.md`](CONFIGURATIONS.md).
 
